@@ -1,0 +1,28 @@
+{
+  "name": "onebyonejs",
+  "version": "1.0.0",
+  "description": "Array.forEach replacement for async operations",
+  "main": "oneByOne.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malipetek/oneByOne.js.git"
+  },
+  "keywords": [
+    "async",
+    "loop",
+    "one",
+    "by",
+    "one",
+    "sequential",
+    "array"
+  ],
+  "author": "malipetek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malipetek/oneByOne.js/issues"
+  },
+  "homepage": "https://github.com/malipetek/oneByOne.js#readme"
+}
