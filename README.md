@@ -7,6 +7,8 @@ Difference from `Promise.all` is, your actions are executed sequentially and you
 
 Example 1: 
 ```js
+require('oneByOne');
+
 ['a', 'b', 'c', 'd'].oneByOne(function(element, index, results, previousResult) {
   return new Promise(functions(done) {
     fetch('www.google.com/?q=' + element)
@@ -20,10 +22,12 @@ Example 1:
 
 Example 2: 
 ```js
+require('oneByOne');
+
 ['a', 'b', 'c', 'd'].oneByOne(async (element, index, results, previousResult) => {
     const response = await fetch('www.google.com/?q=' + this)
     const responseText = await response.text();
     return responseText;
 });
 ``` 
-
+It does not export anything, so you just include it.
