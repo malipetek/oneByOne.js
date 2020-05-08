@@ -10,7 +10,7 @@ Example 1:
 require('onebyonejs');
 
 ['a', 'b', 'c', 'd'].oneByOne(function(element, index, results, previousResult) {
-  return new Promise(functions(done) {
+  return new Promise(function (done) {
     fetch('www.google.com/?q=' + element)
     .then(function(response) { return response.text() })
     .then(function(responseText) {
@@ -31,3 +31,5 @@ require('onebyonejs');
 });
 ``` 
 It does not export anything, so you just include it.
+
+[![Edit OneByOne.js](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/onebyonejs-dhj7k?fontsize=14&hidenavigation=1&theme=dark)
